@@ -45,7 +45,7 @@ module.exports = () => {
         //Recibir los parámetros
 
         const usuario= req.body;
-        User.create()
+        User.create(usuario)
             .then(
                 function(data){
                     console.log(data);
